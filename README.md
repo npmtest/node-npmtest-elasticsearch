@@ -1,4 +1,7 @@
-# test coverage for  [elasticsearch (v12.1.3)](http://www.elastic.co/guide/en/elasticsearch/client/javascript-api/current/index.html)  [![npm package](https://img.shields.io/npm/v/npmtest-elasticsearch.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-elasticsearch) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-elasticsearch.svg)](https://travis-ci.org/npmtest/node-npmtest-elasticsearch)
+# npmtest-elasticsearch
+
+#### test coverage for  [elasticsearch (v12.1.3)](http://www.elastic.co/guide/en/elasticsearch/client/javascript-api/current/index.html)  [![npm package](https://img.shields.io/npm/v/npmtest-elasticsearch.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-elasticsearch) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-elasticsearch.svg)](https://travis-ci.org/npmtest/node-npmtest-elasticsearch)
+
 #### The official low-level Elasticsearch client for Node.js and the browser.
 
 [![NPM](https://nodei.co/npm/elasticsearch.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/elasticsearch)
@@ -9,9 +12,15 @@
 | test-report : | [![test-report](https://npmtest.github.io/node-npmtest-elasticsearch/build/test-report.badge.svg)](https://npmtest.github.io/node-npmtest-elasticsearch/build/test-report.html)|
 | build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-elasticsearch/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-elasticsearch/tree/gh-pages/build)|
 
+- [https://npmtest.github.io/node-npmtest-elasticsearch/build/coverage.html/index.html](https://npmtest.github.io/node-npmtest-elasticsearch/build/coverage.html/index.html)
+
 [![istanbul-coverage](https://npmtest.github.io/node-npmtest-elasticsearch/build/screenCapture.buildCi.browser.%252Ftmp%252Fbuild%252Fcoverage.lib.html.png)](https://npmtest.github.io/node-npmtest-elasticsearch/build/coverage.html/index.html)
 
+- [https://npmtest.github.io/node-npmtest-elasticsearch/build/test-report.html](https://npmtest.github.io/node-npmtest-elasticsearch/build/test-report.html)
+
 [![test-report](https://npmtest.github.io/node-npmtest-elasticsearch/build/screenCapture.buildCi.browser.%252Ftmp%252Fbuild%252Ftest-report.html.png)](https://npmtest.github.io/node-npmtest-elasticsearch/build/test-report.html)
+
+- [https://npmdoc.github.io/node-npmdoc-elasticsearch/build/apidoc.html](https://npmdoc.github.io/node-npmdoc-elasticsearch/build/apidoc.html)
 
 [![apidoc](https://npmdoc.github.io/node-npmdoc-elasticsearch/build/screenCapture.buildCi.browser.%252Ftmp%252Fbuild%252Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-elasticsearch/build/apidoc.html)
 
