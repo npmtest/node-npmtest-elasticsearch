@@ -1,6 +1,6 @@
 # npmtest-elasticsearch
 
-#### test coverage for  [elasticsearch (v12.1.3)](http://www.elastic.co/guide/en/elasticsearch/client/javascript-api/current/index.html)  [![npm package](https://img.shields.io/npm/v/npmtest-elasticsearch.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-elasticsearch) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-elasticsearch.svg)](https://travis-ci.org/npmtest/node-npmtest-elasticsearch)
+#### basic test coverage for  [elasticsearch (v13.0.0)](http://www.elastic.co/guide/en/elasticsearch/client/javascript-api/current/index.html)  [![npm package](https://img.shields.io/npm/v/npmtest-elasticsearch.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-elasticsearch) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-elasticsearch.svg)](https://travis-ci.org/npmtest/node-npmtest-elasticsearch)
 
 #### The official low-level Elasticsearch client for Node.js and the browser.
 
@@ -10,7 +10,7 @@
 |--:|:--|
 | coverage : | [![istanbul-coverage](https://npmtest.github.io/node-npmtest-elasticsearch/build/coverage.badge.svg)](https://npmtest.github.io/node-npmtest-elasticsearch/build/coverage.html/index.html)|
 | test-report : | [![test-report](https://npmtest.github.io/node-npmtest-elasticsearch/build/test-report.badge.svg)](https://npmtest.github.io/node-npmtest-elasticsearch/build/test-report.html)|
-| build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-elasticsearch/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-elasticsearch/tree/gh-pages/build)|
+| test-server-github : | [![github.com test-server](https://npmtest.github.io/node-npmtest-elasticsearch/GitHub-Mark-32px.png)](https://npmtest.github.io/node-npmtest-elasticsearch/build/app/index.html) | | build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-elasticsearch/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-elasticsearch/tree/gh-pages/build)|
 
 - [https://npmtest.github.io/node-npmtest-elasticsearch/build/coverage.html/index.html](https://npmtest.github.io/node-npmtest-elasticsearch/build/coverage.html/index.html)
 
@@ -51,22 +51,14 @@
         "blanket": {
             "pattern": "specified in test/unit/coverage.js"
         },
-        "default_api_branch": "5.0",
+        "default_api_branch": "5.3",
         "supported_es_branches": [
+            "5.3",
+            "5.2",
+            "5.1",
             "5.0",
             "2.4",
-            "2.3",
-            "2.2",
-            "2.1",
-            "2.0",
             "1.7",
-            "1.6",
-            "1.5",
-            "1.4",
-            "1.3",
-            "1.2",
-            "1.1",
-            "1.0",
             "0.90"
         ],
         "unstable_es_branches": [
@@ -75,10 +67,12 @@
         ]
     },
     "dependencies": {
+        "agentkeepalive": "^2.2.0",
         "chalk": "^1.0.0",
-        "forever-agent": "^0.6.0",
-        "lodash": "^4.12.0",
-        "promise": "^7.1.1"
+        "lodash": "2.4.2",
+        "lodash.get": "^4.4.2",
+        "lodash.isempty": "^4.4.0",
+        "lodash.trimend": "^4.5.1"
     },
     "description": "The official low-level Elasticsearch client for Node.js and the browser.",
     "devDependencies": {
@@ -104,7 +98,7 @@
         "grunt-contrib-copy": "^1.0.0",
         "grunt-contrib-uglify": "^1.0.1",
         "grunt-contrib-watch": "^1.0.0",
-        "grunt-esvm": "^3.2.0",
+        "grunt-esvm": "^3.2.8",
         "grunt-mocha-cov": "^0.4.0",
         "grunt-open": "~0.2.2",
         "grunt-prompt": "^1.3.3",
@@ -135,14 +129,19 @@
     },
     "directories": {},
     "dist": {
-        "shasum": "5108e67ae5d83e5e7f30d3d294fd7017df0e3771",
-        "tarball": "https://registry.npmjs.org/elasticsearch/-/elasticsearch-12.1.3.tgz"
+        "shasum": "7f95bdbff5cad637a53be613ddb9adf3770cef58",
+        "tarball": "https://registry.npmjs.org/elasticsearch/-/elasticsearch-13.0.0.tgz"
     },
     "engines": {
         "node": ">=0.8"
     },
-    "gitHead": "222062695f336412b283b90f0407a03835b5ce9f",
+    "gitHead": "5e9afef1ad964ea7c64ab9de8a33937cb359cf09",
     "homepage": "http://www.elastic.co/guide/en/elasticsearch/client/javascript-api/current/index.html",
+    "keywords": [
+        "elasticsearch",
+        "mapping",
+        "REST"
+    ],
     "license": "Apache-2.0",
     "main": "src/elasticsearch.js",
     "maintainers": [
@@ -168,7 +167,8 @@
         "grunt": "grunt",
         "test": "grunt test"
     },
-    "version": "12.1.3"
+    "version": "13.0.0",
+    "bin": {}
 }
 ```
 
